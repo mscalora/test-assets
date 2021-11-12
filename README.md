@@ -1,7 +1,8 @@
 # Filters
 
 #### Simple Example
-<div style="margin-left: 2in">
+<div style="margin-left: 2in; background: pink;">
+    
     function bold (str) {
         return `<b>${str}</b>`;
     }
