@@ -1,8 +1,7 @@
 # Filters
-
 #### Simple Example
-<div style="margin-left: 2in; background: pink;">
-    
+<!-- <example> --> 
+
     function bold (str) {
         return `<b>${str}</b>`;
     }
@@ -10,8 +9,9 @@
     template = '<%= v | bold %>',
     compiled = overtemplate(template, {filters: {bold: bold}});
     console.log(compiled({v: 'test'}));
-</div>
-    
+
+<!-- </example> -->
+
 ## Built-in Filter Reference Index
 
 * [escape](#escape) - encode characters as HTML entities as needed
