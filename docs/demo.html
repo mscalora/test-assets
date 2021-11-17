@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser Tests</title>
+  <style>
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/relaxed-json@^1.0/relaxed-json.js"></script>
+</head>
+<body>
+  <h2>Heading</h2>
+  <p>Test</p>
+  <script>
+    function test () {
+      let url = new URL("../filter-examples.json", location.href);
+      fetch("https://cdn.jsdelivr.net/npm/@mscalora/overtemplate/package.json").then(response => response.json())
+          .then(package => {
+            console.log(package.version);
+            console.log(package);
+          });
+    }
+    test();
+  </script>
+</body>
+</html>
